@@ -16,9 +16,6 @@ else if (window.DeviceotiMonEvent)
 {
     window.addEventListener('devicemotion', function (event)
     { 
-        let para = document.createElement("p");
-        document.body.appendChild(para);
-        para.innerText = event.x + ',' + event.y + ',' + event.z
     }, true);
 } 
 else 
