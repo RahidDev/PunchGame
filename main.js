@@ -15,7 +15,7 @@ if (window.DeviceOrientationEvent)
     }, true);
 
 } 
-else if (window.DeviceotiMonEvent)
+else if (window.DeviceMotionEvent)
 {
     window.addEventListener('devicemotion', function (event)
     { 
