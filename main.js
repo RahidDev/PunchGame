@@ -10,7 +10,7 @@ if (window.DeviceOrientationEvent)
     { 
         //let para = document.createElement("p");
         //document.body.appendChild(para);
-       // para.innerText = 'Alpha:' + event.alpha + ', Beta:' + event.beta + ',Gamma: ' + event.gamma;
+        //para.innerText = 'Alpha:' + event.alpha + ', Beta:' + event.beta + ',Gamma: ' + event.gamma;
 
     }, true);
 
