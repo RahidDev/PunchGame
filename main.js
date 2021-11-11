@@ -21,7 +21,7 @@ else if (window.DeviceotiMonEvent)
     { 
         let para2 = document.createElement("p");
         document.body.appendChild(para2);
-        para2.innerText = 'X:' + event.X + ', Y:' + event.Y + ',Z: ' + event.Z;
+        para2.innerText = 'X:';
     }, true);
 } 
 else 
