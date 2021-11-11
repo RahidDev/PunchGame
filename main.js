@@ -16,19 +16,12 @@ if (window.DeviceOrientationEvent)
     }, true);
 
 } 
-else if (window.DeviceMotionEvent)
+if (window.DeviceMotionEvent)
 {
     window.addEventListener('devicemotion', function (event)
     { 
         let para2 = document.createElement("p");
         document.body.appendChild(para2);
         para2.innerText = 'X:' + event.accelerationIncludingGravity.x;
-    }, true);
-} 
-else 
-{
-    window.addEventListener("MozOrientation", function () 
-    {
-        return
     }, true);
 }

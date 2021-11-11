@@ -10,19 +10,19 @@
 <body>
     <h1>Hello Nick!</h1>
     <script>
-        const options = { frequency: 60, referenceFrame: 'device' };
-        const sensor = new AbsoluteOrientationSensor(options);
+        // const options = { frequency: 60, referenceFrame: 'device' };
+        // const sensor = new AbsoluteOrientationSensor(options);
 
-        sensor.addEventListener('reading', () => {
-        // model is a Three.js object instantiated elsewhere.
-        model.quaternion.fromArray(sensor.quaternion).inverse();
-        });
-        sensor.addEventListener('error', error => {
-        if (event.error.name == 'NotReadableError') {
-            console.log("Sensor is not available.");
-        }
-        });
-        sensor.start();
+        // sensor.addEventListener('reading', () => {
+        // // model is a Three.js object instantiated elsewhere.
+        // model.quaternion.fromArray(sensor.quaternion).inverse();
+        // });
+        // sensor.addEventListener('error', error => {
+        // if (event.error.name == 'NotReadableError') {
+        //     console.log("Sensor is not available.");
+        // }
+        // });
+        // sensor.start();
     </script>
 </body>
 </html>
