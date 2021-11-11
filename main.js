@@ -21,7 +21,7 @@ else if (window.DeviceMotionEvent)
     { 
         let para2 = document.createElement("p");
         document.body.appendChild(para2);
-        para2.innerText = 'X:' + event.x;
+        para2.innerText = 'X:' + event.acceleration.x;
     }, true);
 } 
 else 
