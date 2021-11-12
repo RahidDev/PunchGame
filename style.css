@@ -19,7 +19,7 @@ body{
 nav
 {
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 4% ;
     justify-content: space-between;
     align-items: center;
 }
@@ -31,7 +31,7 @@ nav img
 {
     width: 80%;
     position: absolute;
-    top: 30%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -42,22 +42,21 @@ nav img
     font-size: 30px;
     padding: 10px 10px;
 }
-
 .Infobox p
 {
-    width: 80%;
+    width: 100%;
     position: relative;
-    top: 100%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%,50%);
     text-align: center;
     color: white;
 }
-
 .Data
 {
-    width: 10%;
+    width: 100%;
     padding: 10px 5px;
     font-size: 30;
+    text-align: center;
     color: white;
 }
