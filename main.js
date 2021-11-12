@@ -9,7 +9,7 @@ if (window.DeviceOrientationEvent)
 
     let para = document.createElement("p");
     document.body.appendChild(para);
-    
+
     window.addEventListener("deviceorientation", function (event) 
     { 
         //+ ', Beta:' + event.beta + ',Gamma: ' + event.gamma
@@ -32,9 +32,9 @@ if (window.DeviceMotionEvent)
 {
     window.addEventListener('devicemotion', function (event)
     { 
-        let para2 = document.createElement("p");
-        document.body.appendChild(para2);
-        para2.innerText = 'X:' + event.accelerationIncludingGravity.x;
+        // let para2 = document.createElement("p");
+        // document.body.appendChild(para2);
+        // para2.innerText = 'X:' + event.accelerationIncludingGravity.x;
     }, true);
 } 
 else 
