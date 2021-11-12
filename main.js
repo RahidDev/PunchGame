@@ -1,4 +1,4 @@
-let dataClass = [];
+
 let max = 0 
 /// WritePointer - When you reach end of buffer set point to 0. A ring od ata almost like a loop of tape. 
 /// Store 1000 values when it hits 1,000 reset to 0.
