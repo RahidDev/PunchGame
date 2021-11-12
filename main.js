@@ -10,6 +10,12 @@ if (window.DeviceOrientationEvent)
     let para = document.createElement("p");
     document.body.appendChild(para);
 
+    let para2 = document.createElement("p");
+    document.body.appendChild(para2);
+
+    let para3 = document.createElement("p");
+    document.body.appendChild(para3);
+
     window.addEventListener("deviceorientation", function (event) 
     { 
         //+ ', Beta:' + event.beta + ',Gamma: ' + event.gamma
@@ -17,7 +23,10 @@ if (window.DeviceOrientationEvent)
         let Gamma = event.gamma
         let Beta = event.beta
 
-        para.innerText = Alpha + ',' + Gamma + ',' + Beta
+        para1.innerText = 'Alpha' + Alpha
+        para2.innerText = 'Gamma' + Gamma
+        para3.innerText = 'Beta' + Beta
+        
     }, true);
 
 } 
