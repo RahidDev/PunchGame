@@ -22,13 +22,13 @@ nav
 }
 nav img
 {
-    width: 150px;
+    width: 100px;
 }
 .Infobox
 {
     width: 80%;
     position: absolute;
-    top: 60%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -42,6 +42,7 @@ nav img
 .Infobox p
 {
     width: 100%;
+    font-size: 10px;
     position: relative;
     top: 85%;
     left: 50%;
@@ -56,4 +57,27 @@ nav img
     font-size: 30;
     text-align: left;
     color: white;
+}
+
+button
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 15px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+button:hover
+{
+    border: 1px solid white;
+    background: gray;
+    transition: 1s;
 }

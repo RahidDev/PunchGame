@@ -83,4 +83,5 @@ else
 function reset()
 {
     max = 0
+    alert('Max: ' + max)
 }
