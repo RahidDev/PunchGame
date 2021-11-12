@@ -12,7 +12,11 @@ if (window.DeviceOrientationEvent)
         document.body.appendChild(para);
         para.innerText = 'Alpha:' + event.alpha;
         //+ ', Beta:' + event.beta + ',Gamma: ' + event.gamma
+        let Alpha = event.alpha
+        let Gamma = event.gamma
+        let Beta = event.beta
 
+        para.innerText = alpha + ',' + Gamma + ',' + Beta
     }, true);
 
 } 
