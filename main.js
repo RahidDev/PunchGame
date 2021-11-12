@@ -82,6 +82,6 @@ else
 
 function reset()
 {
-    alert('Max: ' + max);
+    alert('Speed: ' + max);
     max = 0
 }
