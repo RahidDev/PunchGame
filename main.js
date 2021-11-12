@@ -23,7 +23,7 @@ if (window.DeviceOrientationEvent)
         let Gamma = event.gamma
         let Beta = event.beta
 
-        para1.innerText = 'Alpha' + Alpha
+        para.innerText = 'Alpha' + Alpha
         para2.innerText = 'Gamma' + Gamma
         para3.innerText = 'Beta' + Beta
         
