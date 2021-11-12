@@ -17,7 +17,7 @@ if (window.DeviceOrientationEvent)
         let Gamma = event.gamma
         let Beta = event.beta
 
-        para.innerText = alpha + ',' + Gamma + ',' + Beta
+        para.innerText = Alpha + ',' + Gamma + ',' + Beta
     }, true);
 
 } 
