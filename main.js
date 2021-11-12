@@ -8,12 +8,15 @@ if (window.DeviceOrientationEvent)
 {
 
     let para = document.createElement("p");
+    para.className = "Data"
     document.body.appendChild(para);
 
     let para2 = document.createElement("p");
+    para2.className = "Data"
     document.body.appendChild(para2);
 
     let para3 = document.createElement("p");
+    para3.className = "Data"
     document.body.appendChild(para3);
 
     window.addEventListener("deviceorientation", function (event) 
@@ -41,14 +44,17 @@ if (window.DeviceMotionEvent)
 {
 
     let para = document.createElement("p");
+    para.className = "Data"
     document.body.appendChild(para);
 
     let para2 = document.createElement("p");
+    para2.className = "Data"
     document.body.appendChild(para2);
 
     let para3 = document.createElement("p");
+    para3.className = "Data"
     document.body.appendChild(para3);
-
+    
     window.addEventListener('devicemotion', function (event)
     { 
 
@@ -59,9 +65,6 @@ if (window.DeviceMotionEvent)
         para.innerText = 'Z: ' + Z
         para2.innerText = 'X: ' + X
         para3.innerText = 'Y: ' + Y
-        // let para2 = document.createElement("p");
-        // document.body.appendChild(para2);
-        // para2.innerText = 'X:' + event.accelerationIncludingGravity.x;
     }, true);
 } 
 else 
