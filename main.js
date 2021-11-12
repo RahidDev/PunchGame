@@ -6,11 +6,12 @@ let dataClass = [];
 
 if (window.DeviceOrientationEvent) 
 {
+
+    let para = document.createElement("p");
+    document.body.appendChild(para);
+    
     window.addEventListener("deviceorientation", function (event) 
     { 
-        let para = document.createElement("p");
-        document.body.appendChild(para);
-        para.innerText = 'Alpha:' + event.alpha;
         //+ ', Beta:' + event.beta + ',Gamma: ' + event.gamma
         let Alpha = event.alpha
         let Gamma = event.gamma
