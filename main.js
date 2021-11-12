@@ -39,8 +39,26 @@ else
 }
 if (window.DeviceMotionEvent)
 {
+
+    let para = document.createElement("p");
+    document.body.appendChild(para);
+
+    let para2 = document.createElement("p");
+    document.body.appendChild(para2);
+
+    let para3 = document.createElement("p");
+    document.body.appendChild(para3);
+
     window.addEventListener('devicemotion', function (event)
     { 
+
+        let Z = event.accelerationIncludingGravity.x;
+        let X = event.accelerationIncludingGravity.z;
+        let Y = event.accelerationIncludingGravity.y;
+
+        para.innerText = 'Z: ' + Z
+        para2.innerText = 'X: ' + X
+        para3.innerText = 'Y: ' + Y
         // let para2 = document.createElement("p");
         // document.body.appendChild(para2);
         // para2.innerText = 'X:' + event.accelerationIncludingGravity.x;
