@@ -4,7 +4,6 @@ let dataClass = [];
 /// Read data from write pointer - 500 (may take u to 0) and read the data behind the writepointer.
 if (window.DeviceOrientationEvent) 
 {
-
     let para = document.createElement("p");
     para.className = "Data"
     document.body.appendChild(para);
@@ -27,9 +26,7 @@ if (window.DeviceOrientationEvent)
         para.innerText = 'Alpha: ' + Alpha
         para2.innerText = 'Gamma: ' + Gamma
         para3.innerText = 'Beta: ' + Beta
-        
     }, true);
-
 } 
 else
 {
