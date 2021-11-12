@@ -1,4 +1,5 @@
 let dataClass = [];
+let max = 0 
 /// WritePointer - When you reach end of buffer set point to 0. A ring od ata almost like a loop of tape. 
 /// Store 1000 values when it hits 1,000 reset to 0.
 /// Read data from write pointer - 500 (may take u to 0) and read the data behind the writepointer.
@@ -49,23 +50,37 @@ if (window.DeviceMotionEvent)
     let para3 = document.createElement("p");
     para3.className = "Data"
     document.body.appendChild(para3);
+
+    let para4 = document.createElement("p");
+    para4.className = "Data"
+    document.body.appendChild(para3);
     
     window.addEventListener('devicemotion', function (event)
     { 
-
-        let Z = event.accelerationIncludingGravity.x;
-        let X = event.accelerationIncludingGravity.z;
-        let Y = event.accelerationIncludingGravity.y;
+        let Z = event.acceleration.x;
+        let X = event.acceleration.z;
+        let Y = event.acceleration.y;
+         
+    if ( X > max) max = X
+    if ( Y > max) max = Y
+    if ( Z > max) max = Z
 
         para.innerText = 'Z: ' + Z
         para2.innerText = 'X: ' + X
         para3.innerText = 'Y: ' + Y
+        para4.innerText = 'Max: ' + max
     }, true);
 } 
+
 else 
 {
     window.addEventListener("MozOrientation", function () 
     {
         return
     }, true);
+}
+
+function reset()
+{
+    max = 0
 }
