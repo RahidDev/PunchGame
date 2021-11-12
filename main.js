@@ -53,7 +53,7 @@ if (window.DeviceMotionEvent)
 
     let para4 = document.createElement("p");
     para4.className = "Data"
-    document.body.appendChild(para3);
+    document.body.appendChild(para4);
     
     window.addEventListener('devicemotion', function (event)
     { 
